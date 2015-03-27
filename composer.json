@@ -1,0 +1,37 @@
+{
+  "name": "andou/poor-man-staticizer",
+  "description": "",
+  "license": "Mit License",
+  "authors": [
+    {
+      "name": "Antonio Pastorino",
+      "email": "antonio.pastorino@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/andou/poor-man-staticizer/issues"
+  },
+  "require": {
+    "php": ">=5.1.0",
+    "andou/shelltools": "*",
+    "andou/autoloader": "*"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/andou/autoloader.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/andou/shelltools.git"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

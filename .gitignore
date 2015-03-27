@@ -1,0 +1,4 @@
+/vendor/
+/static/*.json
+/generated/
+composer.lock

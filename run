@@ -1,0 +1,19 @@
+#!/usr/bin/php
+<?php
+define('BASEPATH', __DIR__);
+define("IS_SHELL", TRUE);
+require_once BASEPATH . '/vendor/autoload.php';
+$shell = Andou\Shelltools\Shell::getInstance();
+$shell->setFgColor(Andou\Shelltools\Shellcolor::FG_BROWN());
+if ($shell->isCli()):
+  new Andou\Autoloader\Autoloader(__DIR__ . "/src");
+  if ($shell->hasOption("config")) {
+    $app = Andou\Staticizer\App::getInstance()->init($shell->getOption("config"))->staticize();
+  } else {
+    $shell->ol("no config provided");
+  }
+else:
+  echo "ERROR: this script is callable only from PHPCLI environment.\n";
+  exit(1);
+endif;
+exit(0);

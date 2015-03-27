@@ -204,6 +204,7 @@ class App {
   protected function generateHtaccess() {
     $rewrites = array("#Start of " . $this->_configs['operation'], "#RewriteEngine on");
     foreach ($this->_statics as $url => $filename) {
+      $rewrites[] = "RewriteCond   %{QUERY_STRING} !cacheoff";
       $rewrites[] = sprintf('RewriteRule   ^%s$ /%s/%s [PT]', $this->relativeUrl($url), $this->getDestinationPool(), basename($filename));
     }
     return implode("\n", $rewrites) . "\n#End of " . $this->_configs['operation'] . "\n";

@@ -1,0 +1,15 @@
+{
+  "pool": "generated/sample",
+  "destination_pool": "static",
+  "operation": "sample_staticization",
+  "baseurl": "http://www.example.com",
+  "pages": {
+    "http://www.example.com/media": "media.html",
+    "http://www.example.com/spring15/": "spring15.html",
+  },
+  "headers": [
+    "Accept-Language:it-IT,it;q=0.8,en-US;q=0.6,en;q=0.4,fr;q=0.2,ja;q=0.2,ko;q=0.2,zh-CN;q=0.2,zh;q=0.2,de;q=0.2,ru;q=0.2,vi;q=0.2",
+    "Accept-Encoding:gzip, deflate, sdch",
+    "Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+  ]
+}

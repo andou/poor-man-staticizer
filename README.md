@@ -34,11 +34,11 @@ Take a look at  `static/example.com.json.sample` which is a sample config file f
 - `headers` : a list of request headers
 
 ## How can I use it
-You need PHP, yes. Then, first of all you'll have to install dependecies through composer
+You need PHP, yes. Then, first of all you'll have to install dependecies through composer, by typing (only once)
 ```shell
 $ php composer.phar install
 ```
-Just write your `config.json` file and then run the `run` script by typing
+Then just write your `config.json` file and eventually run the `run` script by typing
 ```shell
 $ ./run --config='static/config.json'
 ```

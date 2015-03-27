@@ -1,5 +1,5 @@
 # Poor Man Staticizer
-A not-best-practice web cache generator.
+A non-best-practice web cache generator.
 
 ## What it does
 It simply reads a JSON configuration file and retrieves the content of a set of URIs. 
